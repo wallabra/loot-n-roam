@@ -9,8 +9,19 @@ authors = [
 repository = "https://github.com/wallabra/loot-n-roam"
 license = "MIT"
 license-file = "LICENSE"
-keywords = ["game", "roguelike", "ship", "pirate", "stealth"]
+keywords = [
+    "game", "roguelike", "ship", "pirate", "stealth"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bevy = "0.10.0"
+
+# Enable a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
+
+# Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
