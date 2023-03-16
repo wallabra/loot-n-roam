@@ -1,0 +1,16 @@
+[package]
+name = "loot-n-roam"
+description = "Nautical roguelike immersive sim - loot many islands, with stealth or prowess; make your name known."
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Gustavo Ramos Rehermann <rehermann6046@gmail.com>"
+]
+repository = "https://github.com/wallabra/loot-n-roam"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["game", "roguelike", "ship", "pirate", "stealth"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
